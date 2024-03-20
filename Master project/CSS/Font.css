@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Lato-thin";
+    src: url("../FONTS/Lato/Lato-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato-bold";
+    src: url("../FONTS/Lato/Lato-Bold.ttf") format("truetype");
+}
