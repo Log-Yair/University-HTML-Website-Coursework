@@ -1,0 +1,12 @@
+.navigation {
+    padding: 20px 10px 20px 10px;
+    display: inline;
+}
+
+.navigation-bar {
+    background-color: aqua;
+    float: left;
+    margin: 120px 60px 120px 60px;
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+}
