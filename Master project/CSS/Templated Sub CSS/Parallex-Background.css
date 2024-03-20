@@ -1,0 +1,13 @@
+@import url("../Templated Super CSS/ParallexImageExtension.css");
+
+#night-image {
+    background-image: url("../../JPEG/Night Image.jpg");
+
+    min-height: 1300px; 
+}
+
+#home-image {
+    background-image: url("../../JPEG/Home Image 2.jpg");
+
+    min-height: 400px; 
+}
