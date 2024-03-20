@@ -1,0 +1,15 @@
+@import url('Font.css');
+
+.parallax-text-field {
+    color: rgb(233, 233, 233);
+    background-color: rgb(31, 31, 31);
+    text-align: justify;
+    padding: 100px 100px;
+    font-family: 'Lato-thin', sans-serif;
+}
+
+.parallax-text {
+    text-align: center;
+    font-family: 'Lato-bold', sans-serif;
+    padding-bottom: 5px;
+}

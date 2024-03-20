@@ -1,3 +1,4 @@
+@import url("Font.css");
 
 * {
     margin: 0;
@@ -36,4 +37,5 @@
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+    font-family: 'Lato-bold', sans-serif;
   }
