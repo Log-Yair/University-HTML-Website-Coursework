@@ -25,6 +25,22 @@
     flex: 0 0 auto;
 }
 
+#light-parallex-text-field-last {
+    color: rgb(71, 71, 71);
+    background-color: rgb(244, 244, 244);
+    padding-top: 20px;
+    padding-bottom: 70px;
+    flex: 0 0 auto;
+}
+
+#light-parallex-text-field-first {
+    color: rgb(71, 71, 71);
+    background-color: rgb(244, 244, 244);
+    padding-top: 20px;
+    padding-bottom: 70px;
+    flex: 0 0 auto;
+}
+
 #light-parallex-text-header {
     font-size: 20px;
     padding-bottom: 20px;

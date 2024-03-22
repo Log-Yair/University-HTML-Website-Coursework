@@ -3,7 +3,7 @@
 }
 
 .slide-show-container {
-    /* overflow: hidden; */
+    overflow: hidden;
     margin: auto;
     position: relative;
     height: 100%;
@@ -16,7 +16,7 @@
     display: flex;
 }
 
-#prevbtn {
+.prevbtn {
     position: absolute;
     top: 50%;
     z-index: 2;
@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 
-#nextbtn {
+.nextbtn {
     position: absolute;
     top: 50%;
     z-index: 2;

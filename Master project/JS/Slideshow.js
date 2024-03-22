@@ -1,13 +1,14 @@
 const slides = document.querySelector('.slides');
-const images = document.querySelectorAll('.slides .slide');
+const images = document.querySelectorAll('.slides .parallax-text-field');
 
-const prevbtn = document.querySelector('#prevbtn');
-const nextbtn = document.querySelector('#nextbtn');
+const prevbtn = document.querySelector('.prevbtn');
+const nextbtn = document.querySelector('.nextbtn');
 
 let counter = 1;
 const size = images[0].clientWidth;
 
 slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+console.log(images.length);
 
 nextbtn.addEventListener('click', () => {
     if (counter >= images.length - 1) return;
@@ -24,12 +25,12 @@ prevbtn.addEventListener('click', () => {
 })
 
 slides.addEventListener('transitionend', () => {
-    if (images[counter].id === 'last') {
+    if (images[counter].id === 'light-parallex-text-field-last') {
         slides.style.transition = 'none';
         counter = images.length - 2;
         slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-    if (images[counter].id === 'first') {
+    if (images[counter].id === 'light-parallex-text-field-first') {
         slides.style.transition = 'none';
         counter = images.length - counter;
         slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
