@@ -4,8 +4,8 @@
 /* This is the CSS for the a templated parallex information box */
 .parallax-text-field {
     /* Space between the left and the right should be the same*/
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
     position: relative;
     width: 100%;
 }
