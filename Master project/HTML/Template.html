@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Background.css">
     <link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Container.css">
     <link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Header.css">
+    <link rel="stylesheet" href="../CSS/Templated Sub CSS/Carousel-Slideshow.css">
+    
 
 </head>
   
@@ -23,41 +25,90 @@
 
         <ul>
             <li> <p> L O G O S </p> </li>
-            <li> <a href="">Home</a> </li>
             <li> <a href="">People</a> </li>
-            <li> <a href="">About Us</a> </li>
             <li> <a href="">Feedback</a> </li>
             <li> <a href="">Contact</a> </li>
+            <li> <a href="">About Us</a> </li>
+            <li> <a href="">Home</a> </li>
         </ul>
     </nav>
 
 
+    <!-- Done different to solve some weird bug regarding positions -->
     <div id="night-image" class="center-fit"> </div>
-        <div class="caption"> 
-            <span id="main-page-title" class="border"> NEW AGE INFRASTRACTURE </span>
-        </div>
+    <div class="caption"> 
+        <span id="main-page-title" class="border"> NEW AGE INFRASTRACTURE </span>
+    </div>
 
-
-
+        
+        
+    <!-- //TODO - Create the final aim piece point to the inputted into this section of the panel -->
     <div id="dark-parallex-text-field" class="parallax-text-field">
         <p id="dark-parallex-text-header" class="parallax-text-header"> Parallax Demo </p>
         <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph"> Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo. </p>
     </div>
 
 
-    <!-- //TODO - Create the final aim piece point to the inputted into this section of the panel -->
     <div id="home-image" class="center-fit"> 
         <div class="caption"> 
             <span id="net-zero" class="border"> NET ZERO ARCHITECTURE </span>
         </div>
     </div>
 
-    <div id="light-parallex-text-field" class="parallax-text-field">
-        <p id="light-parallex-text-header" class="parallax-text-header"> Multi-Parallax Demo </p>
-        <p id="light-parallex-text-paragraph" class="parallax-text-paragraph"> Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo. </p>
+    <!-- //TODO - Create the carolsel image board that will house the aim and slideshow of the views that will be presented -->
+
+    <div class="slide-show-container"> 
+
+        <a id="prevbtn" class="prevbtn"> &#10094;</a>
+        <a id="nextbtn" class="nextbtn"> &#10095;</a>
+
+        <div class="slides">
+
+            <div id="last" class="slide">
+                <div id="light-parallex-text-field" class="parallax-text-field">
+                    <p id="light-parallex-text-header" class="parallax-text-header"> 4 L Where can I get some? </p>
+                    <p id="light-parallex-text-paragraph" class="parallax-text-paragraph"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc </p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div id="light-parallex-text-field" class="parallax-text-field">
+                    <p id="light-parallex-text-header" class="parallax-text-header"> 1 What is Lorem Ipsum? </p>
+                    <p id="light-parallex-text-paragraph" class="parallax-text-paragraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div id="light-parallex-text-field" class="parallax-text-field">
+                    <p id="light-parallex-text-header" class="parallax-text-header"> 2 Where does it come from? </p>
+                    <p id="light-parallex-text-paragraph" class="parallax-text-paragraph"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32 </p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div id="light-parallex-text-field" class="parallax-text-field">
+                    <p id="light-parallex-text-header" class="parallax-text-header"> 3 Why do we use it? </p>
+                    <p id="light-parallex-text-paragraph" class="parallax-text-paragraph"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like) </p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div id="light-parallex-text-field" class="parallax-text-field">
+                    <p id="light-parallex-text-header" class="parallax-text-header"> 4 Where can I get some? </p>
+                    <p id="light-parallex-text-paragraph" class="parallax-text-paragraph"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc </p>
+                </div>
+            </div>
+
+            <div id="first" class="slide">
+                <div id="light-parallex-text-field" class="parallax-text-field">
+                    <p id="light-parallex-text-header" class="parallax-text-header"> 1 F What is Lorem Ipsum? </p>
+                    <p id="light-parallex-text-paragraph" class="parallax-text-paragraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+                </div>
+            </div>
+            
+        </div>
     </div>
 
-    <!-- //TODO - Create the carolsel image board that will house the aim and slideshow of the views that will be presented -->
     
     <div id="home-2-image" class="center-fit"> 
         <div class="caption"> 
@@ -75,6 +126,27 @@
             <span id="main-page-title" class="border"> Hello </span>
         </div>
     </div>
+
+    <div class="slide-show-container"> 
+
+        <a id="prevbtn" class="prevbtn"> &#10094;</a>
+        <a id="nextbtn" class="nextbtn"> &#10095;</a>
+        
+        <div class="slides">
+                
+            <div id="light-parallex-text-field" class="parallax-text-field">
+                <p id="light-parallex-text-header" class="parallax-text-header"> 1 F What is Lorem Ipsum? </p>
+                <p id="light-parallex-text-paragraph" class="parallax-text-paragraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+            </div>
+
+            <div id="light-parallex-text-field" class="parallax-text-field">
+                <p id="light-parallex-text-header" class="parallax-text-header"> 1 F What is Lorem Ipsum? </p>
+                <p id="light-parallex-text-paragraph" class="parallax-text-paragraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+            </div>
+        </div>
+
+
+    <script src="../JS/Slideshow.js"> </script>
 </body>
 
 </html>

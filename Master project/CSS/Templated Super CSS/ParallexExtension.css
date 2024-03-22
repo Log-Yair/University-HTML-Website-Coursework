@@ -1,4 +1,4 @@
-@import url('Font.css');
+@import url('../Font.css');
 
 
 /* This is the CSS for the a templated parallex information box */
@@ -6,6 +6,8 @@
     /* Space between the left and the right should be the same*/
     padding-left: 300px;
     padding-right: 300px;
+    position: relative;
+    width: 100%;
 }
 
 .parallax-text-header {
