@@ -5,24 +5,17 @@ const prevbtn = document.querySelector('.prevbtn');
 const nextbtn = document.querySelector('.nextbtn');
 
 let counter = 1;
-const size = images[0].clientWidth;
+
+var slider;
+
+let size = images[0].clientWidth;
+
 
 slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-console.log(images.length);
 
-nextbtn.addEventListener('click', () => {
-    if (counter >= images.length - 1) return;
-    slides.style.transition = 'transform 0.4s ease-in-out';
-    counter++;
-    slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-})
+nextbtn.addEventListener('click', forward);
 
-prevbtn.addEventListener('click', () => {
-    if (counter <= 0) return;
-    slides.style.transition = 'transform 0.4s ease-in-out';
-    counter--;
-    slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-})
+prevbtn.addEventListener('click', backward)
 
 slides.addEventListener('transitionend', () => {
     if (images[counter].id === 'light-parallex-text-field-last') {
@@ -36,3 +29,32 @@ slides.addEventListener('transitionend', () => {
         slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 })
+
+window.addEventListener('resize', reshape);
+
+function reshape() {
+    size = images[0].clientWidth;
+}
+
+function forward() {
+    if (counter >= images.length - 1) return;
+    slides.style.transition = 'transform 1s ease-in-out';
+    counter++;
+    slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    slide();
+}
+
+function backward() {
+    if (counter <= 0) return;
+    slides.style.transition = 'transform 1s ease-in-out';
+    counter--;
+    slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    slide();
+}
+
+function slide() {
+    clearInterval(slider);
+    slider = setInterval(forward, 5000);
+}
+
+slide();
