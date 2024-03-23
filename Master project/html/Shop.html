@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UN Sustainability Shop</title>
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  <header>
+    <h1>UN Sustainability Shop</h1>
+  </header>
+
+  <main>
+    <h2>Our Sustainable Books</h2>
+
+    <section class="products-container">
+      <section class="products">
+        <article class="product">
+          <img src="shop_images/book1.png" alt="Book 1 Title">
+          <h3>Book 1 Title</h3>
+          <p>This is a critical message...</p>
+          <span class="price">Standard: $19.99 / Large Print: £33.99</span>
+          <div class="options">
+            <select name="size">
+              <option value="standard">Standard Size</option>
+              <option value="large-print">Large Print</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="shop_images/book2.png" alt="Book 2 Title">
+          <h3>Book 2 Title</h3>
+          <p>Another insightful read...</p>
+          <span class="price">Standard: $19.99 / Large Print: £33.99</span>
+          <div class="options">
+            <select name="size">
+              <option value="standard">Standard Size</option>
+              <option value="large-print">Large Print</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="products">
+        <article class="product">
+          <img src="shop_images/book3.jpg" alt="Book 3 Title">
+          <h3>Book 3 Title</h3>
+          <p>Another insightful read...</p>
+          <span class="price">Standard: $19.99 / Large Print: £33.99</span>
+          <div class="options">
+            <select name="size">
+              <option value="standard">Standard Size</option>
+              <option value="large-print">Large Print</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="shop_images/book4.jpg" alt="Book 4 Title (replace with another image)">
+          <h3>Book 4 Title</h3>
+          <p>Another insightful read...</p>
+          <span class="price">Standard: $19.99 / Large Print: £33.99</span>
+          <div class="options">
+            <select name="size">
+              <option value="standard">Standard Size</option>
+              <option value="large-print">Large Print</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section class="order-summary">
+      <h2>Order Summary</h2>
+      <ul class="cart-items"></ul>
+      <p class="empty-message">Your cart is currently empty.</p>
+      <button class="btn disabled" disabled>Proceed to Checkout</button>
+      <button class="btn clear-cart">Clear Cart</button>
+    </section>
+  </main>
+
+  <script src="shop.js"></script>
+
+  <footer>
+    <p>&copy; UN Sustainability Shop</p>
+  </footer>
+</body>
+</html>
