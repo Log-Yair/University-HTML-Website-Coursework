@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Lato-thin";
+    src: url("../FONTS/Lato/Lato-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato-light";
+    src: url("../FONTS/Lato/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato-black";
+    src: url("../FONTS/Lato/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Grotesque-light";
+    src: url("../FONTS/Darker_Grotesque/static/DarkerGrotesque-Light.ttf") format("truetype");
+}

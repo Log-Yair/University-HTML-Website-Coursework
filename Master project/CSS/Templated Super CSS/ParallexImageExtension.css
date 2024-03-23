@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+
+    position: relative;
+
+    /* 
+        Makes sure the is not affected by scrolling
+        Makes sure the image is centered regardless of shifting  */
+    background-attachment: fixed;
+    background-position: center;
+    /* The background image does repeat after multiple scrolls*/
+    background-repeat: no-repeat;
+    /* Covers the whole page */
+    background-size: cover;
+}

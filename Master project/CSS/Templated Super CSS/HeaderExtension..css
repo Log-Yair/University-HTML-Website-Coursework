@@ -1,0 +1,15 @@
+@import url("../Font.css");
+
+.caption {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+  }
+
+.caption span.border {
+    padding: 18px;
+    font-family: 'Lato-thin', sans-serif;
+  }

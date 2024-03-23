@@ -1,0 +1,35 @@
+@import url('../Font.css');
+
+
+/* This is the CSS for the a templated parallex information box */
+.parallax-text-field {
+    /* Space between the left and the right should be the same*/
+    padding-left: 200px;
+    padding-right: 200px;
+    position: relative;
+    width: 100%;
+}
+
+.parallax-text-header {
+    /*
+        Text aligned for the header
+
+        letter spacing for the title */
+    text-align: center;
+    font-family: 'Lato-thin', sans-serif;
+    letter-spacing: 10px;
+}
+
+.parallax-text-paragraph {
+    /*
+        Text justifyied for the box just to make it flexable to altering
+
+        letter spacing for the paragraphs */
+    text-align: justify;
+    font-family: 'Grotesque-light', sans-serif;
+    letter-spacing: 2px;
+}
+
+/*
+    LINK: PARALLEX CONTAINER
+*/
