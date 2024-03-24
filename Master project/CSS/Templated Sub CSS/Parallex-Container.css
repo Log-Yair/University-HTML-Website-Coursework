@@ -1,5 +1,6 @@
 @import url("../Templated Super CSS/ParallexExtension.css");
 
+/* #region DARK THEME */ 
 #dark-parallex-text-field {
     color: rgb(233, 233, 233);
     background-color: rgb(31, 31, 31);
@@ -13,27 +14,43 @@
 }
 
 #dark-parallex-text-paragraph {
-    font-size: 15px;
+    font-size: 12px;
     padding-bottom: 20px;
+}
+/* #endregion */
+
+#light-parallex-text-icon-marker {
+    color: rgb(71, 71, 71);
+    padding-right: 6.75px;
+    padding-bottom: 5px;
+}
+
+#light-parallex-text-icon-phone {
+    color: rgb(71, 71, 71);
+    padding-right: 6.75px;
+    padding-bottom: 5px;
+}
+
+#light-parallex-text-icon-mail {
+    color: rgb(71, 71, 71);
+    padding-right: 3px;
+    padding-bottom: 5px;
+}
+
+#light-parallex-text-icon-paragraph {
+    color: rgb(71, 71, 71);
+    padding-bottom: 3px;
 }
 
 #light-parallex-text-field {
     color: rgb(71, 71, 71);
     background-color: rgb(244, 244, 244);
-    padding-top: 20px;
-    padding-bottom: 70px;
+    padding-top: 10px;
+    padding-bottom: 40px;
     flex: 0 0 auto;
 }
 
 #light-parallex-text-field-last {
-    color: rgb(71, 71, 71);
-    background-color: rgb(244, 244, 244);
-    padding-top: 20px;
-    padding-bottom: 70px;
-    flex: 0 0 auto;
-}
-
-#light-parallex-text-field-first {
     color: rgb(71, 71, 71);
     background-color: rgb(244, 244, 244);
     padding-top: 20px;
@@ -46,11 +63,25 @@
     padding-bottom: 20px;
 }
 
+#light-parallex-text-sub-header {
+    font-size: 20px;
+}
+
 #light-parallex-text-paragraph {
-    font-size: 15px;
+    font-size: 12px;
     padding-bottom: 20px;
 }
 
+#light-parallex-text-field-first {
+    color: rgb(71, 71, 71);
+    background-color: rgb(244, 244, 244);
+    padding-top: 20px;
+    padding-bottom: 70px;
+    flex: 0 0 auto;
+}
+
+
+/* #region */
 #grey-parallex-text-field {
     color: rgb(255, 255, 255);
     background-color: rgb(200, 200, 200);
@@ -64,6 +95,7 @@
 }
 
 #grey-parallex-text-paragraph {
-    font-size: 15px;
+    font-size: 12px;
     padding-bottom: 20px;
 }
+/* #endregion */

@@ -3,7 +3,31 @@
 #night-image {
     background-image: url("../../JPEG/Night Image.jpg");
 
-    min-height: 1100px;
+    min-height: 1300px;
+}
+
+#waterfall-image {
+    background-image: url("../../JPEG/Waterfall.jpeg");
+
+    min-height: 100dvh;
+}
+
+#waterfall-2-image {
+    background-image: url("../../JPEG/Waterfall 2.jpg");
+
+    min-height: 60dvh;
+}
+
+#waterfall-3-image {
+    background-image: url("../../JPEG/Waterfall 3.jpg");
+
+    min-height: 40dvh;
+}
+
+#cliff-image {
+    background-image: url("../../JPEG/Cliff.jpg");
+
+    min-height: 300px;
 }
 
 #home-image {
