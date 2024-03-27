@@ -14,3 +14,10 @@
     letter-spacing: 10px;
 }
 
+#feedback {
+    background-color: rgba(101, 101, 101, 0.478);
+    color: rgb(237, 237, 237);
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+

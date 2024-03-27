@@ -60,6 +60,17 @@
     letter-spacing: 2px;
 }
 
+.main-parallax-container-links {
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+    padding: 0px 20dvw 0px 20dvw;
+}
+
+.main-parallax-container-links:hover {
+    border: 1px solid rgba(244, 244, 244, 0.25);
+}
+
+
 /*
     LINK: PARALLEX CONTAINER
 */

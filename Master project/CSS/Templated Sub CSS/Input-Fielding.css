@@ -62,3 +62,13 @@
 .submit-device:hover {
     background-color: rgb(255, 255, 255);
 }
+
+@media(max-width: 500px) {
+    .input-dual-device {
+        display: block;
+    }
+
+    .input-device {
+        width: 100%;
+    }
+}

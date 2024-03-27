@@ -15,19 +15,19 @@
 #waterfall-2-image {
     background-image: url("../../JPEG/Waterfall 2.jpg");
 
-    min-height: 60dvh;
+    min-height: 40dvh;
 }
 
 #waterfall-3-image {
     background-image: url("../../JPEG/Waterfall 3.jpg");
 
-    min-height: 40dvh;
+    min-height: 70dvh;
 }
 
 #cliff-image {
     background-image: url("../../JPEG/Cliff.jpg");
 
-    min-height: 300px;
+    min-height: 30dvh;
 }
 
 #home-image {
@@ -46,4 +46,10 @@
     background-image: url("../../JPEG/Home Image 3.jpg");
 
     min-height: 1000px; 
+}
+
+#mountain-image {
+    background-image: url("../../JPEG/Mountain Image.jpg");
+
+    min-height: 40dvh;
 }
