@@ -1,0 +1,67 @@
+@import url("../CSS/Font.css");
+
+.main-nav {
+    padding: 0px 0px 10px 0px;
+    /* Make permanent to the page regardless */
+    position: fixed;
+    /* The highest of properties*/
+    top: 0;
+    /* The longest possible to fit the page */
+    /* Used to fix some weird thing with the bumping the navbar background*/
+    width: 100%;
+    height: 10%;
+
+    /* background: linear-gradient(to bottom,  rgba(34, 34, 34, 0.7),  rgba(71, 71, 71, 0)); */
+    
+    margin: 0px 1px 1px 1px;
+
+    z-index: 10;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Lato-thin', sans-serif;
+
+    float: right;
+    padding: 10px 30px 10px 30px;
+    margin: 0px 0px 0 0px;
+    color: rgb(211, 211, 211);
+}
+
+.main-nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.main-nav p{
+    /* Reside to the left of the screen*/
+    color: rgb(211, 211, 211);
+    float: left;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 10px 0 10px;
+}
+
+
+@media (max-width: 1000px) {
+    .main-nav {
+        background: none;
+    }
+    .main-nav ul li a {
+        position: relative;
+        /* background: linear-gradient(to left,rgba(34, 34, 34, 0.7), rgba(32, 32, 32, 0));
+        width: 100%; */
+        left: 0;
+        text-align: right;
+        z-index: 10;
+        width: 100%;
+        top: 10%;
+    }
+}

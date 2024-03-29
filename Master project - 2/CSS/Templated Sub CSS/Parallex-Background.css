@@ -1,0 +1,117 @@
+@import url("../Templated Super CSS/ParallexImageExtension.css");
+
+#night-image {
+    background-image: url("../../JPEG/Night Image.jpg");
+
+    min-height: 1300px;
+}
+
+#waterfall-image {
+    background-image: url("../../JPEG/Waterfall.jpeg");
+
+    min-height: 100dvh;
+}
+
+#waterfall-2-image {
+    background-image: url("../../JPEG/Waterfall 2.jpg");
+
+    filter: grayscale(100%);
+
+    min-height: 40dvh;
+}
+
+#waterfall-2-5-image {
+    background-image: url("../../JPEG/Waterfall 2.jpg");
+
+    min-height: 250px;
+}
+
+#waterfall-3-image {
+    background-image: url("../../JPEG/Waterfall 3.jpg");
+
+    min-height: 70dvh;
+}
+
+#cliff-image {
+    background-image: url("../../JPEG/Cliff.jpg");
+
+    min-height: 30dvh;
+}
+
+#cliff-1-5-image {
+    background-image: url("../../JPEG/Cliff.jpg");
+    filter: grayscale(100%);
+
+    min-height: 100dvh;
+}
+
+
+
+
+#home-image {
+    background-image: url("../../JPEG/Home Image 2.jpg");
+
+    min-height: 200px; 
+}
+
+#home-2-image {
+    background-image: url("../../JPEG/Home Image.jpg");
+
+    min-height: 200px; 
+}
+
+#home-3-image {
+    background-image: url("../../JPEG/Home Image 3.jpg");
+
+    min-height: 200px; 
+}
+
+#home-4-image {
+    background-image: url("../../JPEG/Home Image 4.jpg");
+
+    min-height: 200px; 
+}
+
+#mountain-image {
+    background-image: url("../../JPEG/Mountain Image.jpg");
+    filter: grayscale(100%);
+
+    min-height: 40dvh;
+}
+
+#foggy-forest-image {
+    background-image: url(../../JPEG/Foggy-forest-1.jpg);
+    filter: grayscale(100%);
+    min-height: 30dvh;
+}
+
+#A1 {
+    background-image: url(../../JPEG/A1.jpg);
+    filter: grayscale(70%);
+    min-height: 30dvh;
+}
+#B1 {
+    background-image: url(../../JPEG/B1.jpg);
+    filter: grayscale(70%);
+    min-height: 30dvh;
+}
+#C1 {
+    background-image: url(../../JPEG/C1.jpg);
+    filter: grayscale(70%);
+    min-height: 100dvh;
+}
+#D1 {
+    background-image: url(../../JPEG/D1.jpg);
+    filter: grayscale(70%);
+    min-height: 30dvh;
+}
+#E1 {
+    background-image: url(../../JPEG/E1.jpg);
+    filter: grayscale(70%);
+    min-height: 30dvh;
+}
+#F1 {
+    background-image: url(../../JPEG/F1.jpg);
+    filter: grayscale(70%);
+    min-height: 30dvh;
+}

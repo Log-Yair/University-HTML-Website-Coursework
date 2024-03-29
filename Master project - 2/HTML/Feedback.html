@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title> Feedback </title>
+
+    <script src="https://kit.fontawesome.com/3c6f9e92a3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../CSS/Navigation.css">
+
+    <link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Background.css">
+    <link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Container.css">
+    <link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Header.css">
+    <link rel="stylesheet" href="../CSS/Templated Sub CSS/Carousel-Slideshow.css">
+    <link rel="stylesheet" href="../CSS/Templated Sub CSS/Input-Fielding.css">
+    <link rel="stylesheet" href="../CSS/Templated Sub CSS/Feedback Form/Feedback-Custom.css">
+
+    <link rel="stylesheet" href="../CSS/Templated Super CSS/ColumnExtension.css">
+
+    <style> 
+        .REVIEW_FINAL_INPUTTYPE {
+            height: 42px;
+        }
+
+        .REVIEW_FINAL_RADIOTYPE {
+            height: 42px;
+        }
+
+        .REVIEW_FINAL_SELECTTYPE {
+            height: 42px;
+        }
+
+        .TEXTAREA_COLUMN_OVERRIDE {
+            width: 95%;
+        }
+
+        /* 57px due to 42 (input height + padding) IDK why */
+        .TEXTAREA_HEIGHT_INPUTTYPE {
+            height: 57px;
+            padding-bottom: 15px;
+        }
+
+        .TEXTAREA_HEIGHT_TEXTAREATYPE {
+            height: 80px;
+            padding-bottom: 15px;
+        }
+    
+    </style>
+
+</head>
+  
+<body>
+    <nav class="main-nav">
+        
+        <p> I N F R A </p>
+
+        <ul>
+            <li> <a href="">People</a> </li>
+            <li> <a href="Feedback.html">Feedback</a> </li>
+            <li> <a href="">Contact</a> </li>
+            <li> <a href="http://w2047599.users.ecs.westminster.ac.uk/webdev/Cw/shop.html">Store</a> </li>
+            <li> <a href="Template.html">Home</a> </li>
+        </ul>
+    </nav>
+
+    <div id="FORM_RECIEVED" style="display: none;"> 
+        <div id="waterfall-image" class="center-fit"> </div>
+        <div class="caption"> 
+            <span id="main-page-title" class="border"> WE HAVE YOUR MAIL </span>
+        </div>
+    </div>
+
+
+    <div style="display: block;" id="FORM_PAGE">
+        <div id="waterfall-2-image" class="center-fit"> 
+            <div class="caption"> 
+                <span id="net-zero" class="border"> FEEDBACK </span>
+            </div>
+        </div>
+
+        <div id="dark-parallex-text-field" class="parallax-text-field">
+            <p id="dark-parallex-text-header" class="parallax-text-header"> Feedback quality control </p>
+            <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                Welcome to our website feedback page—the hub for your valuable insights and suggestions! We value your opinion and strive to continuously improve your browsing experience. Share your thoughts, whether it's praise for what you love or constructive criticism for areas to enhance. Your feedback fuels our commitment to excellence, guiding our efforts to better serve you. Take this opportunity to shape the future of our website, ensuring it meets your needs and exceeds your expectations. Together, let's create a platform that resonates with you. Your input matters—visit our feedback page and be heard today</p>
+        </div>
+        
+        
+        <div id="waterfall-2-image" class="center-fit"> 
+            <div class="caption"> 
+                <span id="net-zero" class="border"> SITE QUESTIONNAIRE </span>
+            </div>
+        </div>
+        
+        <div id="light-parallex-text-field" class="parallax-text-field">
+            <p id="light-parallex-text-header" class="parallax-text-header"> Form </p>
+            <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center"> Please input all the necessary informatio to complete this form. Feel fre to state any problems you feel necessary as this can be a great hep for us any future customers aided by you feedback </p>
+            
+            <div> 
+                <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center error-class"></p>
+            </div>
+
+
+            <div id="INPUT-FORM-form" style="display: block;">
+                <form id="feedback-form">
+
+                    <!-- First row -->
+                    <label for="detail" class="feedback-labels"> Name </label>
+                    <div class="input-dual-device" id="detail"> 
+                        <div id="left-input-device" class="input-device-field"> 
+                            <input name="first" class="input-device" placeholder="First name" type="text" id="customer-details" required>
+                        </div>
+                
+                        <div id="right-input-device" class="input-device-field"> 
+                            <input name="last" class="input-device" placeholder="Last name" type="text" id="customer-details" required>
+                        </div>
+                    </div>  
+                
+
+                    <!-- Second row -->
+
+                    <label for="email" class="feedback-labels"> Email </label>
+                    <div class="input-dual-device" id="email"> 
+                        <div id="left-input-device" class="input-device-field"> 
+
+                            <div class="DIV_CLASS_PADDING_BOTTOM"> 
+                                <input name="email" class="input-device" placeholder="Email" type="email" style="width: 95%;" id="customer-email" required>
+                            </div>
+                        </div>
+                
+                        <div id="right-input-device" class="input-device-field" style="width: 30%;"> 
+                            <select style="width: 95%; border: none; font-family: 'Grotesque-light', sans-serif; border-radius: 4px; padding: 10px;" id="email-selection" required> 
+                                <option value="@gmail.com" selected> @gmail.com </option>
+                                <option value="@yahoo.com"> @yahoo.com </option>
+                            </select>
+                        </div>
+                    </div>  
+
+                        
+                    <!-- Rating -->
+                    <label for="rating" class="feedback-labels"> Rating </label>
+                    <div style="width: 100%; padding-bottom: 15px;"> 
+                        <select style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif; border-radius: 4px; padding: 5px;" class="rating-options" id="rating"> 
+                            <option value="select" selected> Select </option>
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8"> 8 </option>
+                            <option value="9"> 9 </option>
+                            <option value="10"> 10 </option>
+                        </select>
+                    </div>
+
+                    <div class="textarea-height" style="display: none;"> 
+                        <textarea name="message" class="textarea-device" placeholder="Comment"></textarea>
+                    </div>
+
+                    <label for="INPUT_FORM_time_visiting" class="feedback-labels"> Is this your first time here </label>
+
+                    <div class="input-dual-device" id="INPUT_FORM_time_visiting" style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif;"> 
+                        <div id="left-input-device" class="input-device-field" style="text-align: center;"> 
+
+                            <input type="radio" id="RADIO_time_visiting_yes" name="first_time" style="text-align: center;" value="yes">
+                            <label for="RADIO_time_visiting_yes"> Correct </label>
+                        </div>
+                
+                        <div id="right-input-device" class="input-device-field" style="text-align: center;"> 
+                            <label for="RADIO_time_visiting_no"> Incorrect </label>
+                            <input type="radio" id="RADIO_time_visiting_no" name="first_time" style="text-align: center;" value="no" checked>
+                        </div>
+                    </div>
+
+                    <label for="INPUT_FORM_news_letter" class="feedback-labels"> Would you like to recieve the news letter </label>
+
+                    <div class="input-dual-device" id="INPUT_FORM_news_letter" style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif;"> 
+                        <div id="left-input-device" class="input-device-field" style="text-align: center;"> 
+
+                            <input type="radio" id="RADIO_news_letter_yes" name="news_letter" style="text-align: center;" value="yes">
+                            <label for="RADIO_news_letter_yes"> Correct </label>
+                        </div>
+                
+                        <div id="right-input-device" class="input-device-field" style="text-align: center;"> 
+                            <label for="RADIO_news_letter_no"> Incorrect </label>
+                            <input type="radio" id="RADIO_news_letter_no" name="news_letter" style="text-align: center;" value="no" checked>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="textarea-height" style="display: none;"> 
+                        <textarea name="message" class="textarea-device" placeholder="Comment" id="INPUT_FORM_rating_comment"></textarea>
+                    </div>
+
+
+                    <label for="market" class="feedback-labels"> How was the design of the market store </label>
+                    <div class="textarea-height"> 
+                        <textarea name="message" class="textarea-device" placeholder="Comment" id="market"></textarea>
+                    </div>
+
+                    <label for="navigation" class="feedback-labels"> How was the tempo of navigation </label>
+                    <div class="textarea-height"> 
+                        <textarea name="message" class="textarea-device" placeholder="Comment" id="navigation"></textarea>
+                    </div>
+                    
+
+                    <label for="improvement" class="feedback-labels"> Are there any improvements </label>
+                    <div style="width: 100%; padding-bottom: 15px;"> 
+                        <select style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif; border-radius: 4px; padding: 5px;" class="boolean-textarea-switch" name="option" id="improvement"> 
+                            <option value="no"> No </option>
+                            <option value="yes"> Yes </option>
+                        </select>
+                    </div>
+                    
+                    <div class="textarea-height" style="display: none;"> 
+                        <textarea name="message" class="textarea-device" placeholder="Comment" id="INPUT_FORM_improvement_comment"></textarea>
+                    </div>
+
+                    <label for="information" class="feedback-labels"> Was content difficult to understand </label>
+                    <div style="width: 100%; padding-bottom: 15px;"> 
+                        <select style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif; border-radius: 4px; padding: 5px;" class="boolean-textarea-switch" name="option" id="information"> 
+                            <option value="no"> No </option>
+                            <option value="yes"> Yes </option>
+                        </select>
+                    </div>
+                    
+                    <div class="textarea-height" style="display: none;"> 
+                        <textarea name="message" class="textarea-device" placeholder="Comment" id="INPUT_FORM_information_comment"></textarea>
+                    </div>
+                
+                    <div class="submit-field">
+                        <input type="button" class="submit-device" onclick="formCheck()">   
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        <div id="REVIEW-FORM-form" style="display: none;"> 
+            <div id="waterfall-2-image" class="center-fit">  </div>
+
+            <form action="mailto:siuwon010@gmail.com" method="post" onsubmit="mail(this);" >
+                <div id="light-parallex-text-field" class="parallax-text-field">
+                    <p id="light-parallex-text-header" class="parallax-text-header"> Final review</p>
+                    <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                        <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center"> </p>
+
+                        <!-- VIEW PAGE for details-->
+                        <label for="LABEL_REVIEW_FINAL_details" class="feedback-labels"> Name </label>
+                        <div class="input-dual-device" id="LABEL_REVIEW_FINAL_details"> 
+                            <div id="left-input-device" class="input-device-field"> 
+                                <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block; text-align: left;" > 
+                                    <textarea name="TEXTAREA_first" class="textarea-device REVIEW_FINAL_first REVIEW_FINAL_INPUTTYPE TEXTAREA_COLUMN_OVERRIDE" readonly></textarea>
+                                </div>
+                            </div>
+                    
+                            <div id="right-input-device" class="input-device-field"> 
+                                <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block; text-align: right; " > 
+                                    <textarea name="TEXTAREA_last" class="textarea-device REVIEW_FINAL_last REVIEW_FINAL_INPUTTYPE TEXTAREA_COLUMN_OVERRIDE" readonly></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- VIEW PAGE for email -->
+                        <label for="LABEL_REVIEW_FINAL_email" class="feedback-labels"> Email </label>
+                        <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block;" id="LABEL_REVIEW_FINAL_email"> 
+                            <textarea name="TEXTAREA_email" class="textarea-device REVIEW_FINAL_email REVIEW_FINAL_RADIOTYPE" readonly></textarea>
+                        </div>
+
+                        <!-- VIEW PAGE for ratings -->
+                        <label for="LABEL_REVIEW_FINAL_rating" class="feedback-labels"> Rating </label>
+                        <div class="input-dual-device" id="LABEL_REVIEW_FINAL_rating"> 
+                            <div id="left-input-device" class="input-device-field"> 
+                                <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block; text-align: left;" > 
+                                    <textarea name="TEXTAREA_rating" class="textarea-device REVIEW_FINAL_rating REVIEW_FINAL_INPUTTYPE TEXTAREA_COLUMN_OVERRIDE" readonly></textarea>
+                                </div>
+                            </div>
+                    
+                            <div id="right-input-device" class="input-device-field"> 
+                                <div class="TEXTAREA_HEIGHT_TEXTAREATYPE" style="display: block; text-align: right; " > 
+                                    <textarea name="TEXTAREA_rating_comment" class="textarea-device REVIEW_FINAL_rating_comment TEXTAREA_COLUMN_OVERRIDE" readonly></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- VIEW PAGE for radio visiting -->
+                        <label for="LABEL_REVIEW_FINAL_time_visiting" class="feedback-labels"> Time visting </label>
+                        <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block;" id="LABEL_REVIEW_FINAL_time_visiting"> 
+                            <textarea name="TEXTAREA_time_visiting" class="textarea-device REVIEW_FINAL_time_visiting REVIEW_FINAL_RADIOTYPE" readonly></textarea>
+                        </div>
+
+                        <!-- VIEW PAGE for radio news letter -->
+                        <label for="LABEL_REVIEW_FINAL_news_letter" class="feedback-labels"> Newsletter </label>
+                        <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block;" id="LABEL_REVIEW_FINAL_news_letter"> 
+                            <textarea name="TEXTAREA_news_letter" class="textarea-device REVIEW_FINAL_news_letter REVIEW_FINAL_RADIOTYPE" readonly></textarea>
+                        </div>
+
+                        <!-- VIEW PAGE for text comment on market -->
+                        <label for="LABEL_REVIEW_FINAL_market" class="feedback-labels"> Market </label>
+                        <div class="TEXTAREA_HEIGHT_TEXTAREATYPE" style="display: block;" id="LABEL_REVIEW_FINAL_market"> 
+                            <textarea name="TEXTAREA_market_design" class="textarea-device REVIEW_FINAL_market_design" readonly></textarea>
+                        </div>
+
+                        <!-- VIEW PAGE for text comment on navigation -->
+                        <label for="LABEL_REVIEW_FINAL_navigation" class="feedback-labels"> Navigation </label>
+                        <div class="TEXTAREA_HEIGHT_TEXTAREATYPE" style="display: block;" id="LABEL_REVIEW_FINAL_navigation"> 
+                            <textarea name="TEXTAREA_navigation" class="textarea-device REVIEW_FINAL_navigation" readonly></textarea>
+                        </div>
+
+                        <!-- VIEW PAGE for text comment on improvements -->
+                        <label for="LABEL_REVIEW_FINAL_improvements" class="feedback-labels"> Improvements </label>
+                        <div class="input-dual-device" id="LABEL_REVIEW_FINAL_improvements"> 
+                            <div id="left-input-device" class="input-device-field"> 
+                                <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block; text-align: left;"> 
+                                    <textarea name="TEXTAREA_improvement" class="textarea-device REVIEW_FINAL_improvement TEXTAREA_COLUMN_OVERRIDE REVIEW_FINAL_SELECTTYPE" readonly></textarea>
+                                </div>
+                            </div>
+                    
+                            <div id="right-input-device" class="input-device-field"> 
+                                <div class="TEXTAREA_HEIGHT_TEXTAREATYPE" style="display: block; text-align: right;"> 
+                                    <textarea name="TEXTAREA_comment" class="textarea-device REVIEW_FINAL_improvement_comment TEXTAREA_COLUMN_OVERRIDE" readonly></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label for="LABEL_REVIEW_FINAL_information" class="feedback-labels"> Information </label>
+                        <div class="input-dual-device" id="LABEL_REVIEW_FINAL_information"> 
+                            <div id="left-input-device" class="input-device-field"> 
+                                <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block; text-align: left;" > 
+                                    <textarea name="TEXTAREA_information" class="textarea-device REVIEW_FINAL_information TEXTAREA_COLUMN_OVERRIDE REVIEW_FINAL_SELECTTYPE" readonly></textarea>
+                                </div>
+                            </div>
+                    
+                            <div id="right-input-device" class="input-device-field"> 
+                                <div class="TEXTAREA_HEIGHT_TEXTAREATYPE" style="display: block; text-align: right; " > 
+                                    <textarea name="TEXTAREA_information_comment" class="textarea-device REVIEW_FINAL_information_comment TEXTAREA_COLUMN_OVERRIDE" readonly></textarea>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="submit-field">
+                            <input type="button" class="submit-device" onclick="revertDisplay();">   
+                        </div>
+                        <div class="submit-field">
+                            <input type="submit" class="submit-device">   
+                        </div>
+
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../JS/BooleanTextAreaReaction.js"> </script>
+    <script src="../JS/Feedback Form/InputValidation.js"> </script>
+
+</body>
+
+</html>
