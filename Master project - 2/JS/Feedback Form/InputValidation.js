@@ -1,10 +1,13 @@
 let errormessage = document.querySelector('.error-class');
 let submitbutton = document.getElementById('submit-button');
 let feedbackform = document.getElementById('feedback-form');
-let customerdetails = document.querySelectorAll('#customer-details');
+let customerdetails = document.querySelectorAll('#ID_customer_detail');
 let customeremail = document.querySelector('#customer-email');
 let emailselect = document.querySelector('#email-selection')
 let ratingselection = document.querySelector('#rating');
+
+let market = document.querySelector('#market');
+let nagivation = document.querySelector('#navigation');
 
 let REVIEW_FINAL_form = document.getElementById('REVIEW-FORM-form');
 let INPUT_FORM_form = document.getElementById('INPUT-FORM-form');
@@ -28,7 +31,7 @@ function formCheck() {
 function finalDisplay() {
     let REVIEW_FINAL_first = document.querySelector('.REVIEW_FINAL_first');
     let REVIEW_FINAL_last = document.querySelector('.REVIEW_FINAL_last');
-    let INPUT_FORM_first = document.querySelectorAll('#customer-details');
+    let INPUT_FORM_first = document.querySelectorAll('#ID_customer_detail');
 
     let REVIEW_FINAL_rating = document.querySelector('.REVIEW_FINAL_rating');
     let INPUT_FORM_rating = document.querySelector('#rating');
@@ -111,6 +114,7 @@ function customerDetails(founderror) {
 
     founderror = customerEmail(founderror);
     founderror = customerRating(founderror);
+    founderror = customertextarea(founderror);
 
     return founderror;
 }
@@ -139,6 +143,30 @@ function customerRating(founderror) {
     return founderror;
 }
 
+// * Used for the rating 
+function customerRating(founderror) {
+    if (ratingselection.value == "select" && !founderror) {
+        founderror = true;
+        errormessage.innerHTML = "Select a rating";
+    }
+
+    if (!founderror) errormessage.innerHTML = "";
+
+    return founderror;
+}
+
+// * Used for the exposed textarea 
+function customertextarea(founderror) {
+    if ((market.value == "" || nagivation.value == "") && !founderror) {
+        founderror = true;
+        errormessage.innerHTML = "Textarea empty";
+    }
+
+    if (!founderror) errormessage.innerHTML = "";
+
+    return founderror;
+}
+
 function mail(form) {
     let FORM_PAGE = document.getElementById('FORM_PAGE');
     let FORM_RECIEVED = document.getElementById('FORM_RECIEVED');
@@ -146,6 +174,6 @@ function mail(form) {
     FORM_PAGE.style.display = "none";
     FORM_RECIEVED.style.display = "block";
     
-    form.action = "mailto:siuwon010@gmail.com";
+    form.action = "mailto:w2045929@westminst.ac.uk";
 }
 

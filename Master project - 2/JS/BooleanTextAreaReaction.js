@@ -26,3 +26,9 @@ ratingOptions.forEach(function(ratingOption) {
         }
     });
 });
+
+
+let improvement = document.querySelector('#improvement')
+let information = document.querySelector('#information')
+let INPUT_FORM_improvement_comment = document.querySelector('#INPUT_FORM_improvement_comment')
+let INPUT_FORM_information_comment = document.querySelector('#INPUT_FORM_information_comment')

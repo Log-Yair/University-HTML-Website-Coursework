@@ -128,22 +128,23 @@ Visit our feedback page today to share your insights and ideas. Your voice matte
                 <form id="feedback-form">
 
                     <!-- First row -->
-                    <label for="detail" class="feedback-labels"> Name </label>
-                    <div class="input-dual-device" id="detail"> 
+                    <label for="LABEL_details" class="CLASS_feedback_label"> Name </label>
+
+                    <div class="input-dual-device" id="LABEL_details"> 
                         <div id="left-input-device" class="input-device-field"> 
-                            <input name="first" class="input-device" placeholder="First name" type="text" id="customer-details" required>
+                            <input name="first" class="input-device" placeholder="First name" type="text" id="ID_customer_detail" required>
                         </div>
                 
                         <div id="right-input-device" class="input-device-field"> 
-                            <input name="last" class="input-device" placeholder="Last name" type="text" id="customer-details" required>
+                            <input name="last" class="input-device" placeholder="Last name" type="text" id="ID_customer_detail" required>
                         </div>
                     </div>  
                 
 
                     <!-- Second row -->
+                    <label for="LABEL_email" class="CLASS_feedback_label"> Email </label>
 
-                    <label for="email" class="feedback-labels"> Email </label>
-                    <div class="input-dual-device" id="email"> 
+                    <div class="input-dual-device" id="LABEL_email"> 
                         <div id="left-input-device" class="input-device-field"> 
 
                             <div class="DIV_CLASS_PADDING_BOTTOM"> 
@@ -161,9 +162,9 @@ Visit our feedback page today to share your insights and ideas. Your voice matte
 
                         
                     <!-- Rating -->
-                    <label for="rating" class="feedback-labels"> Rating </label>
-                    <div style="width: 100%; padding-bottom: 15px;"> 
-                        <select style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif; border-radius: 4px; padding: 5px;" class="rating-options" id="rating"> 
+                    <label for="rating" class="CLASS_feedback_label"> Rating </label>
+                    <div style="width: 100%; padding-bottom: 15px;" id="rating"> 
+                        <select style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif; border-radius: 4px; padding: 5px;" class="rating-options"> 
                             <option value="select" selected> Select </option>
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
@@ -182,32 +183,32 @@ Visit our feedback page today to share your insights and ideas. Your voice matte
                         <textarea name="message" class="textarea-device" placeholder="Comment"></textarea>
                     </div>
 
-                    <label for="INPUT_FORM_time_visiting" class="feedback-labels"> Is this your first time here </label>
+                    <label for="INPUT_FORM_time_visiting" class="CLASS_feedback_label"> Is this your first time here </label>
 
                     <div class="input-dual-device" id="INPUT_FORM_time_visiting" style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif;"> 
                         <div id="left-input-device" class="input-device-field" style="text-align: center;"> 
 
                             <input type="radio" id="RADIO_time_visiting_yes" name="first_time" style="text-align: center;" value="yes">
-                            <label for="RADIO_time_visiting_yes" class="feedback-labels"> Correct </label>
+                            <label for="RADIO_time_visiting_yes" class="CLASS_feedback_label"> Correct </label>
                         </div>
                 
                         <div id="right-input-device" class="input-device-field" style="text-align: center;"> 
-                            <label for="RADIO_time_visiting_no" class="feedback-labels"> Incorrect </label>
+                            <label for="RADIO_time_visiting_no" class="CLASS_feedback_label"> Incorrect </label>
                             <input type="radio" id="RADIO_time_visiting_no" name="first_time" style="text-align: center;" value="no" checked>
                         </div>
                     </div>
 
-                    <label for="INPUT_FORM_news_letter" class="feedback-labels"> Would you like to recieve the news letter </label>
+                    <label for="INPUT_FORM_news_letter" class="CLASS_feedback_label"> Would you like to recieve the news letter </label>
 
                     <div class="input-dual-device" id="INPUT_FORM_news_letter" style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif;"> 
                         <div id="left-input-device" class="input-device-field" style="text-align: center;"> 
 
                             <input type="radio" id="RADIO_news_letter_yes" name="news_letter" style="text-align: center;" value="yes">
-                            <label for="RADIO_news_letter_yes" class="feedback-labels"> Correct </label>
+                            <label for="RADIO_news_letter_yes" class="CLASS_feedback_label"> Correct </label>
                         </div>
                 
                         <div id="right-input-device" class="input-device-field" style="text-align: center;"> 
-                            <label for="RADIO_news_letter_no" class="feedback-labels"> Incorrect </label>
+                            <label for="RADIO_news_letter_no" class="CLASS_feedback_label"> Incorrect </label>
                             <input type="radio" id="RADIO_news_letter_no" name="news_letter" style="text-align: center;" value="no" checked>
                         </div>
                     </div>
@@ -220,18 +221,18 @@ Visit our feedback page today to share your insights and ideas. Your voice matte
                     </div>
 
 
-                    <label for="market" class="feedback-labels"> How was the design of the market store </label>
+                    <label for="market" class="CLASS_feedback_label"> How was the design of the market store </label>
                     <div class="textarea-height"> 
                         <textarea name="message" class="textarea-device" placeholder="Comment" id="market"></textarea>
                     </div>
 
-                    <label for="navigation" class="feedback-labels"> How was the tempo of navigation </label>
+                    <label for="navigation" class="CLASS_feedback_label"> How was the tempo of navigation </label>
                     <div class="textarea-height"> 
                         <textarea name="message" class="textarea-device" placeholder="Comment" id="navigation"></textarea>
                     </div>
                     
 
-                    <label for="improvement" class="feedback-labels"> Are there any improvements </label>
+                    <label for="improvement" class="CLASS_feedback_label"> Are there any improvements </label>
                     <div style="width: 100%; padding-bottom: 15px;"> 
                         <select style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif; border-radius: 4px; padding: 5px;" class="boolean-textarea-switch" name="option" id="improvement"> 
                             <option value="no"> No </option>
@@ -243,7 +244,7 @@ Visit our feedback page today to share your insights and ideas. Your voice matte
                         <textarea name="message" class="textarea-device" placeholder="Comment" id="INPUT_FORM_improvement_comment"></textarea>
                     </div>
 
-                    <label for="information" class="feedback-labels"> Was content difficult to understand </label>
+                    <label for="information" class="CLASS_feedback_label"> Was content difficult to understand </label>
                     <div style="width: 100%; padding-bottom: 15px;"> 
                         <select style="width: 100%; border: none; font-family: 'Grotesque-light', sans-serif; border-radius: 4px; padding: 5px;" class="boolean-textarea-switch" name="option" id="information"> 
                             <option value="no"> No </option>
@@ -265,14 +266,14 @@ Visit our feedback page today to share your insights and ideas. Your voice matte
         
         <div id="REVIEW-FORM-form" style="display: none;"> 
 
-            <form action="mailto:siuwon010@gmail.com" method="post" onsubmit="mail(this);" >
+            <form action="mailto:w2045929@westminst.ac.uk" method="post" onsubmit="mail(this);" >
                 <div id="dark-parallex-text-field" class="parallax-text-field">
                     <p id="dark-parallex-text-header" class="parallax-text-header"> Final review</p>
                     <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
                         <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> </p>
 
                         <!-- VIEW PAGE for details-->
-                        <label for="LABEL_REVIEW_FINAL_details" class="feedback-labels"> Name </label>
+                        <label for="LABEL_REVIEW_FINAL_details" class="CLASS_feedback_label"> Name </label>
                         <div class="input-dual-device" id="LABEL_REVIEW_FINAL_details"> 
                             <div id="left-input-device" class="input-device-field"> 
                                 <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block; text-align: left;" > 
@@ -288,13 +289,13 @@ Visit our feedback page today to share your insights and ideas. Your voice matte
                         </div>
 
                         <!-- VIEW PAGE for email -->
-                        <label for="LABEL_REVIEW_FINAL_email" class="feedback-labels"> Email </label>
+                        <label for="LABEL_REVIEW_FINAL_email" class="CLASS_feedback_label"> Email </label>
                         <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block;" id="LABEL_REVIEW_FINAL_email"> 
                             <textarea name="TEXTAREA_email" class="textarea-device REVIEW_FINAL_email REVIEW_FINAL_RADIOTYPE" readonly></textarea>
                         </div>
 
                         <!-- VIEW PAGE for ratings -->
-                        <label for="LABEL_REVIEW_FINAL_rating" class="feedback-labels"> Rating </label>
+                        <label for="LABEL_REVIEW_FINAL_rating" class="CLASS_feedback_label"> Rating </label>
                         <div class="input-dual-device" id="LABEL_REVIEW_FINAL_rating"> 
                             <div id="left-input-device" class="input-device-field"> 
                                 <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block; text-align: left;" > 
@@ -311,31 +312,31 @@ Visit our feedback page today to share your insights and ideas. Your voice matte
 
 
                         <!-- VIEW PAGE for radio visiting -->
-                        <label for="LABEL_REVIEW_FINAL_time_visiting" class="feedback-labels"> Time visting </label>
+                        <label for="LABEL_REVIEW_FINAL_time_visiting" class="CLASS_feedback_label"> Time visting </label>
                         <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block;" id="LABEL_REVIEW_FINAL_time_visiting"> 
                             <textarea name="TEXTAREA_time_visiting" class="textarea-device REVIEW_FINAL_time_visiting REVIEW_FINAL_RADIOTYPE" readonly></textarea>
                         </div>
 
                         <!-- VIEW PAGE for radio news letter -->
-                        <label for="LABEL_REVIEW_FINAL_news_letter" class="feedback-labels"> Newsletter </label>
+                        <label for="LABEL_REVIEW_FINAL_news_letter" class="CLASS_feedback_label"> Newsletter </label>
                         <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block;" id="LABEL_REVIEW_FINAL_news_letter"> 
                             <textarea name="TEXTAREA_news_letter" class="textarea-device REVIEW_FINAL_news_letter REVIEW_FINAL_RADIOTYPE" readonly></textarea>
                         </div>
 
                         <!-- VIEW PAGE for text comment on market -->
-                        <label for="LABEL_REVIEW_FINAL_market" class="feedback-labels"> Market </label>
+                        <label for="LABEL_REVIEW_FINAL_market" class="CLASS_feedback_label"> Market </label>
                         <div class="TEXTAREA_HEIGHT_TEXTAREATYPE" style="display: block;" id="LABEL_REVIEW_FINAL_market"> 
                             <textarea name="TEXTAREA_market_design" class="textarea-device REVIEW_FINAL_market_design" readonly></textarea>
                         </div>
 
                         <!-- VIEW PAGE for text comment on navigation -->
-                        <label for="LABEL_REVIEW_FINAL_navigation" class="feedback-labels"> Navigation </label>
+                        <label for="LABEL_REVIEW_FINAL_navigation" class="CLASS_feedback_label"> Navigation </label>
                         <div class="TEXTAREA_HEIGHT_TEXTAREATYPE" style="display: block;" id="LABEL_REVIEW_FINAL_navigation"> 
                             <textarea name="TEXTAREA_navigation" class="textarea-device REVIEW_FINAL_navigation" readonly></textarea>
                         </div>
 
                         <!-- VIEW PAGE for text comment on improvements -->
-                        <label for="LABEL_REVIEW_FINAL_improvements" class="feedback-labels"> Improvements </label>
+                        <label for="LABEL_REVIEW_FINAL_improvements" class="CLASS_feedback_label"> Improvements </label>
                         <div class="input-dual-device" id="LABEL_REVIEW_FINAL_improvements"> 
                             <div id="left-input-device" class="input-device-field"> 
                                 <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block; text-align: left;"> 
@@ -350,7 +351,7 @@ Visit our feedback page today to share your insights and ideas. Your voice matte
                             </div>
                         </div>
 
-                        <label for="LABEL_REVIEW_FINAL_information" class="feedback-labels"> Information </label>
+                        <label for="LABEL_REVIEW_FINAL_information" class="CLASS_feedback_label"> Information </label>
                         <div class="input-dual-device" id="LABEL_REVIEW_FINAL_information"> 
                             <div id="left-input-device" class="input-device-field"> 
                                 <div class="TEXTAREA_HEIGHT_INPUTTYPE" style="display: block; text-align: left;" > 
