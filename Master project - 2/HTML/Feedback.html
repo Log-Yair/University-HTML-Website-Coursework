@@ -45,56 +45,79 @@
             height: 80px;
             padding-bottom: 15px;
         }
+
+        dark-parallex-text-field input, dark-parallex-text-field textarea, dark-parallex-text-field select {
+            background-color: rgba(244, 244, 244, 0.5);
+        }
+
+        light-parallex-text-field input, light-parallex-text-field textarea, light-parallex-text-field select {
+            background-color: rgb(31, 31, 31);
+        }
     
     </style>
 
 </head>
   
 <body>
+    <div id="top"></div>
+
+
     <nav class="main-nav">
         
-        <p> I N F R A </p>
+        <p> <i class="fa-solid fa-layer-group"></i> I N F R A  </p>
 
         <ul>
-            <li> <a href="">People</a> </li>
-            <li> <a href="Feedback.html">Feedback</a> </li>
-            <li> <a href="">Contact</a> </li>
-            <li> <a href="http://w2047599.users.ecs.westminster.ac.uk/webdev/Cw/shop.html">Store</a> </li>
             <li> <a href="Template.html">Home</a> </li>
+            <li> <a href="Feedback.html">Feedback</a> </li>
+            <li> <a href="">Gen Zero</a> </li>
+            <li> <a href="">Meetings</a> </li>
+            <li> <a href="">3D Printing</a> </li>
+            <li> <a href="">Store</a></li>
+            <li> <a href="">Profile</a> </li>
+            <li> <a href="">Teams</a> </li>
         </ul>
     </nav>
 
-    <div id="FORM_RECIEVED" style="display: none;"> 
+
+    <!-- Done different to solve some weird bug regarding positions -->
+    <div id="C1" class="center-fit"> </div>
+
+    <div class="caption"> 
+        <span id="main-page-title" class="border"> FEEDBACK </span>
+    </div>
+
+    <!-- <div id="FORM_RECIEVED" style="display: none;"> 
         <div id="waterfall-image" class="center-fit"> </div>
         <div class="caption"> 
             <span id="main-page-title" class="border"> WE HAVE YOUR MAIL </span>
         </div>
-    </div>
+    </div> -->
 
 
     <div style="display: block;" id="FORM_PAGE">
-        <div id="waterfall-2-image" class="center-fit"> 
-            <div class="caption"> 
-                <span id="net-zero" class="border"> FEEDBACK </span>
-            </div>
-        </div>
 
         <div id="dark-parallex-text-field" class="parallax-text-field">
             <p id="dark-parallex-text-header" class="parallax-text-header"> Feedback quality control </p>
             <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
-                Welcome to our website feedback page—the hub for your valuable insights and suggestions! We value your opinion and strive to continuously improve your browsing experience. Share your thoughts, whether it's praise for what you love or constructive criticism for areas to enhance. Your feedback fuels our commitment to excellence, guiding our efforts to better serve you. Take this opportunity to shape the future of our website, ensuring it meets your needs and exceeds your expectations. Together, let's create a platform that resonates with you. Your input matters—visit our feedback page and be heard today</p>
+                Welcome to our website feedback page—an essential space where your insights and suggestions play a pivotal role in shaping our platform's evolution. Your opinion holds immense value to us as we continuously strive to enhance your browsing experience. Whether you have praises to share for features you love or constructive criticism aimed at areas we can improve, we welcome all feedback with open arms.
+
+Your valuable input fuels our commitment to excellence, serving as the compass that guides our efforts to better serve you. Every comment, suggestion, and idea contributes to our collective journey towards creating a website that exceeds your expectations and resonates with your needs.
+
+We invite you to take this opportunity to be an active participant in shaping the future of our platform. Your thoughts and opinions matter deeply to us, and we're eager to hear from you. Together, let's collaborate to refine and enhance our website, ensuring it remains a valuable resource that enriches your online experience.
+
+Visit our feedback page today to share your insights and ideas. Your voice matters, and by joining us in this dialogue, you're helping to create a platform that truly reflects your preferences and priorities. Thank you for being a vital part of our community—we can't wait to hear from you </p>
         </div>
         
         
-        <div id="waterfall-2-image" class="center-fit"> 
+        <div id="B1" class="center-fit"> 
             <div class="caption"> 
                 <span id="net-zero" class="border"> SITE QUESTIONNAIRE </span>
             </div>
         </div>
         
-        <div id="light-parallex-text-field" class="parallax-text-field">
-            <p id="light-parallex-text-header" class="parallax-text-header"> Form </p>
-            <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center"> Please input all the necessary informatio to complete this form. Feel fre to state any problems you feel necessary as this can be a great hep for us any future customers aided by you feedback </p>
+        <div id="dark-parallex-text-field" class="parallax-text-field">
+            <p id="dark-parallex-text-header" class="parallax-text-header"> Form </p>
+            <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> To ensure your feedback is comprehensive and impactful, please fill out all necessary input fields. Your insights are invaluable in shaping our platform's future. We deeply appreciate your thoroughness and commitment to enhancing your browsing experience. Thank you for taking the time to contribute to our continuous improvement efforts. Together, we can create a website that truly meets and exceeds your expectations. Your input is instrumental in making this happen </p>
             
             <div> 
                 <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center error-class"></p>
@@ -165,11 +188,11 @@
                         <div id="left-input-device" class="input-device-field" style="text-align: center;"> 
 
                             <input type="radio" id="RADIO_time_visiting_yes" name="first_time" style="text-align: center;" value="yes">
-                            <label for="RADIO_time_visiting_yes"> Correct </label>
+                            <label for="RADIO_time_visiting_yes" class="feedback-labels"> Correct </label>
                         </div>
                 
                         <div id="right-input-device" class="input-device-field" style="text-align: center;"> 
-                            <label for="RADIO_time_visiting_no"> Incorrect </label>
+                            <label for="RADIO_time_visiting_no" class="feedback-labels"> Incorrect </label>
                             <input type="radio" id="RADIO_time_visiting_no" name="first_time" style="text-align: center;" value="no" checked>
                         </div>
                     </div>
@@ -180,11 +203,11 @@
                         <div id="left-input-device" class="input-device-field" style="text-align: center;"> 
 
                             <input type="radio" id="RADIO_news_letter_yes" name="news_letter" style="text-align: center;" value="yes">
-                            <label for="RADIO_news_letter_yes"> Correct </label>
+                            <label for="RADIO_news_letter_yes" class="feedback-labels"> Correct </label>
                         </div>
                 
                         <div id="right-input-device" class="input-device-field" style="text-align: center;"> 
-                            <label for="RADIO_news_letter_no"> Incorrect </label>
+                            <label for="RADIO_news_letter_no" class="feedback-labels"> Incorrect </label>
                             <input type="radio" id="RADIO_news_letter_no" name="news_letter" style="text-align: center;" value="no" checked>
                         </div>
                     </div>
@@ -232,7 +255,7 @@
                         <textarea name="message" class="textarea-device" placeholder="Comment" id="INPUT_FORM_information_comment"></textarea>
                     </div>
                 
-                    <div class="submit-field">
+                    <div class="submit-field" style="padding-top: 50px;">
                         <input type="button" class="submit-device" onclick="formCheck()">   
                     </div>
                 </form>
@@ -241,13 +264,12 @@
 
         
         <div id="REVIEW-FORM-form" style="display: none;"> 
-            <div id="waterfall-2-image" class="center-fit">  </div>
 
             <form action="mailto:siuwon010@gmail.com" method="post" onsubmit="mail(this);" >
-                <div id="light-parallex-text-field" class="parallax-text-field">
-                    <p id="light-parallex-text-header" class="parallax-text-header"> Final review</p>
-                    <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
-                        <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center"> </p>
+                <div id="dark-parallex-text-field" class="parallax-text-field">
+                    <p id="dark-parallex-text-header" class="parallax-text-header"> Final review</p>
+                    <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                        <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> </p>
 
                         <!-- VIEW PAGE for details-->
                         <label for="LABEL_REVIEW_FINAL_details" class="feedback-labels"> Name </label>
@@ -354,6 +376,56 @@
                 </div>
             </form>
         </div>
+
+        <div id="C1" class="center-fit"> 
+
+            <div class="caption"> 
+                <a href="#top" id="main-page-links"> <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    
+
+        <!-- MARKER POSITIONS ALREADY SET. INPUT AND CHANGE LINKS TO YOUR PAGE EDITOR AND NAME-->
+        <footer>
+
+            <div id="dark-parallex-text-field" class="parallax-text-field">
+                <p id="dark-parallex-text-header" class="parallax-text-header"> Page Editor </p>
+                <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                    Unleash your creativity with our page editor page! Dive in to customize your experience, from layout to content, and shape our website to suit your preferences. Whether you're tweaking design elements or refining functionality, the power is in your hands. Explore endless possibilities and make our platform truly your own. With intuitive tools and seamless editing features, transforming your browsing experience has never been easier. Let's collaborate to create something uniquely yours—visit our page editor page today </p>
+            </div>
+
+            <div id="dark-parallex-text-field" class="parallax-text-field con"> 
+                <div class="column-left"> 
+                    <div id="dark-parallex-text-paragraph" class="parallax-text-paragraph-left"> 
+
+                        <p style="padding-bottom: 12px;"> 
+                            <i class="fa-solid fa-envelope" id="dark-parallex-text-icon-mail"></i> ID, w2045929@westminster.ac.uk <i class="fa-solid fa-address-card" id="dark-parallex-text-address"></i> Name, Siu Kitt Wong
+                        </p>
+
+                        <p style="padding-bottom: 12px;"> 
+                            <i class="fa-solid fa-envelope" id="dark-parallex-text-icon-mail"></i> ID, w2029084@westminster.ac.uk <i class="fa-solid fa-address-card" id="dark-parallex-text-address"></i> Name, Ashley Piper
+                        </p>
+
+                        <p style="padding-bottom: 12px;"> 
+                            <i class="fa-solid fa-envelope" id="dark-parallex-text-icon-mail"></i> ID, w2047599@westminster.ac.uk <i class="fa-solid fa-address-card" id="dark-parallex-text-address"></i> Name, Yair 
+                        </p>
+                    </div>
+                </div> 
+                <div class="column-right"> 
+                    <div id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                        <a class="dark-main-parallax-container-links" href="Feedback.html"> PAGE EDITOR </a>
+                    </div>
+                    <div id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                        <a class="dark-main-parallax-container-links" href="Feedback.html"> PAGE EDITOR </a>
+                    </div>
+                    <div id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                        <a class="dark-main-parallax-container-links" href="Feedback.html"> PAGE EDITOR </a>
+                    </div>
+                </div> 
+            </div>
+                
+            </div>
+        </footer>
     </div>
 
     <script src="../JS/BooleanTextAreaReaction.js"> </script>

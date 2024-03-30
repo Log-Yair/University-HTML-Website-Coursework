@@ -4,8 +4,8 @@
 #dark-parallex-text-field {
     color: rgb(233, 233, 233);
     background-color: rgb(31, 31, 31);
-    padding-top: 20px;
-    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 #dark-parallex-text-header {
@@ -15,7 +15,12 @@
 
 #dark-parallex-text-paragraph {
     font-size: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+#dark-parallex-text-paragraph-padding-bottom {
+    font-size: 12px;
+    padding-bottom: 3px;
 }
 /* #endregion */
 
@@ -45,8 +50,8 @@
 #light-parallex-text-field {
     color: rgb(71, 71, 71);
     background-color: rgb(244, 244, 244);
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     flex: 0 0 auto;
 }
 
@@ -54,7 +59,7 @@
     color: rgb(71, 71, 71);
     background-color: rgb(244, 244, 244);
     padding-top: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     flex: 0 0 auto;
 }
 
@@ -76,7 +81,7 @@
     color: rgb(71, 71, 71);
     background-color: rgb(244, 244, 244);
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     flex: 0 0 auto;
 }
 
@@ -95,5 +100,11 @@
 #dark-parallex-text-icon-mail {
     color: rgb(244, 244, 244);
     padding-right: 3px;
+    padding-bottom: 5px;
+}
+
+#dark-parallex-text-address {
+    color: rgb(244, 244, 244);
+    padding-right: 1.5px;
     padding-bottom: 5px;
 }

@@ -50,25 +50,25 @@
 
 #home-image {
     background-image: url("../../JPEG/Home Image 2.jpg");
-
-    min-height: 200px; 
+    filter: grayscale(70%);
+    min-height: 40dvh; 
 }
 
 #home-2-image {
     background-image: url("../../JPEG/Home Image.jpg");
-
-    min-height: 200px; 
+    filter: grayscale(70%);
+    min-height: 40dvh; 
 }
 
 #home-3-image {
     background-image: url("../../JPEG/Home Image 3.jpg");
-
+    filter: grayscale(70%);
     min-height: 200px; 
 }
 
 #home-4-image {
     background-image: url("../../JPEG/Home Image 4.jpg");
-
+    filter: grayscale(70%);
     min-height: 200px; 
 }
 

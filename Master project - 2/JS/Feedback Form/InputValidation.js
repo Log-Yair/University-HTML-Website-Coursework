@@ -98,10 +98,9 @@ function revertDisplay() {
 
 
 
-
+// * Used for the name and last name details
 
 function customerDetails(founderror) {
-
     for (var element of customerdetails) {
         if (element.value == "" && !founderror) {
             founderror = true;
@@ -116,6 +115,7 @@ function customerDetails(founderror) {
     return founderror;
 }
 
+// * Used for the email details
 function customerEmail(founderror) {
     if (!customeremail.value.includes(emailselect.value) && !founderror) {
         founderror = true;
@@ -127,6 +127,7 @@ function customerEmail(founderror) {
     return founderror;
 }
 
+// * Used for the rating 
 function customerRating(founderror) {
     if (ratingselection.value == "select" && !founderror) {
         founderror = true;
